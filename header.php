@@ -44,12 +44,12 @@
 							<span class="icon-bar"></span>
 						</button>
 
-						<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+						<!--<a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a> -->
 					</div>
 
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
 						<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-
+                                                <?php wp_bootstrap_top_links(); ?>
 						<?php //if(of_get_option('search_bar', '1')) {?>
 						<form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
 							<div class="form-group">

@@ -103,7 +103,7 @@ function wp_bootstrap_top_links() {
     wp_nav_menu(
             array(
                 'menu' => 'top_links', /* menu name */
-                'menu_class' => 'nav navbar-nav top-links',
+                'menu_class' => 'nav top-links',
                 'theme_location' => 'top_links', /* where in the theme it's assigned */
                 'container' => 'false', /* container class */
                 'fallback_cb' => 'wp_bootstrap_main_nav_fallback', /* menu fallback */

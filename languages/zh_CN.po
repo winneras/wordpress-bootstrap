@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: /Users/kafran/Documents/wordpress-bootstrap\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language: zh_Hans_CN\n"
+"Language: zh_CN\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:13
@@ -57,17 +57,17 @@ msgstr ""
 #: archive.php:43 attachment.php:15 author.php:31 image.php:23 index.php:34
 #: search.php:17 single.php:17
 msgid "Posted"
-msgstr ""
+msgstr "发表于"
 
 #: archive.php:43 attachment.php:15 author.php:31 image.php:23 index.php:34
 #: search.php:17 single.php:17
 msgid "by"
-msgstr ""
+msgstr "作者"
 
 #: archive.php:43 attachment.php:15 author.php:31 index.php:34 search.php:17
 #: single.php:17
 msgid "filed under"
-msgstr ""
+msgstr "分类"
 
 #: archive.php:70 author.php:58 index.php:59 search.php:42
 msgid "&laquo; Older Entries"
@@ -281,7 +281,7 @@ msgstr ""
 
 #: index.php:39
 msgid "Read more &raquo;"
-msgstr ""
+msgstr "继续阅读"
 
 #: search.php:7
 msgid "Search Results for"

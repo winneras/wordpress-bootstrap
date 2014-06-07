@@ -39,7 +39,11 @@
                         <div class="col-sm-12">
                             <div class="row">
                                 <div class= "col-md-4 col-sm-12 posRlt" >
-                                    <?php echo do_shortcode('[metaslider id=53]') ?>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <?php echo do_shortcode('[metaslider id=53]') ?>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class= "col-md-4 posRlt sticky-news" >
                                     <div id="news-block" class="home-4col-block">
@@ -151,7 +155,7 @@
                         <div class="row">
                             <div id="" class="clearfix top-bottom-padding">
                                 <div class= "col-md-4 posRlt" >
-                                    
+
                                     <div id="taifo-block" class="home-4col-block">  
                                         <div class="row"><h2 class="block-title">泰佛</h2></div>
                                         <?php
@@ -172,9 +176,9 @@
                                         <?php wp_reset_postdata(); ?>
                                     </div>
                                 </div>
-                                
+
                                 <div class= "col-md-4 posRlt" >
-                                    
+
                                     <div id="fopai-block" class="home-4col-block">  
                                         <div class="row"><h2 class="block-title">佛牌</h2></div>
                                         <?php
@@ -195,9 +199,9 @@
                                         <?php wp_reset_postdata(); ?>
                                     </div>
                                 </div>
-                                
+
                                 <div class= "col-md-4 posRlt" >
-                                    
+
                                     <div id="gumantong-block" class="home-4col-block">  
                                         <div class="row"><h2 class="block-title">古曼童</h2></div>
                                         <?php

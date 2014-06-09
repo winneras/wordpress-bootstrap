@@ -284,15 +284,101 @@
                             </div>
                         </div>
 
+
+
+                        <div class="row">
+                            <div class="clearfix three-in-one"  id="gongqing-block">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="top-border"></div>
+                                    </div>
+                                </div>
+                                <div class="row md-lg-display">
+
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <h2 class="block-title">恭请结缘</h2>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <?php
+                                    $args = array(
+                                        'posts_per_page' => 4,
+                                        'category__in' => array(16),
+                                        'ignore_sticky_posts' => 0
+                                    );
+                                    $query = new WP_Query($args);
+                                    ?>                                    
+                                    <?php while ($query->have_posts()): $query->the_post(); ?>
+                                        <?php if (has_post_thumbnail()) : ?>
+                                            <div class="col-md-3">
+                                                <div class="top-bottom-padding">
+                                                    <div class="">
+                                                        <a href="<?php the_permalink(); ?>">
+                                                            <?php echo get_the_post_thumbnail($query->ID, 'medium', array('class' => 'img-responsive')); ?>
+                                                        </a>
+                                                    </div>
+                                                    <div class="">
+                                                        <h3 class="ellipsisTxt"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+                                    <?php endwhile; ?>
+                                    <?php wp_reset_postdata(); ?>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="top-border"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="clearfix three-in-one"  id="tupian-block">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="top-border"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <?php
+                                    $args = array(
+                                        'posts_per_page' => 6,
+                                        'meta_key' => '_thumbnail_id',
+                                        'category__in' => array(10, 11, 8)
+                                    );
+                                    $query = new WP_Query($args);
+                                    ?>                                    
+                                    <?php while ($query->have_posts()): $query->the_post(); ?>
+                                        <?php if (has_post_thumbnail()) : ?>
+                                            <div class="col-md-2">
+                                                <div class="top-bottom-padding">
+                                                    <div class="">
+                                                        <a href="<?php the_permalink(); ?>">
+                                                            <?php echo get_the_post_thumbnail($query->ID, 'medium', array('class' => 'img-responsive')); ?>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+                                    <?php endwhile; ?>
+                                    <?php wp_reset_postdata(); ?>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="top-border"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <?php // get_sidebar('sidebar2'); // sidebar 2   ?>
 
                     </section> <!-- end article header -->
-
-                    <footer>
-
-                        <p class="clearfix"><?php the_tags('<span class="tags">' . __("Tags", "wpbootstrap") . ': ', ', ', '</span>'); ?></p>
-
-                    </footer> <!-- end article footer -->
 
                 </article> <!-- end article -->
 

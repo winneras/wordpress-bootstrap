@@ -6987,3 +6987,11 @@ blockquote.pull-left {
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
+.page-template-page-homepage-php #gongqing-block,
+.page-template-page-homepage-php #tupian-block {
+  text-align: center;
+  margin-top: 20px;
+}
+.page-template-page-homepage-php #main article {
+  margin-bottom: 0;
+}

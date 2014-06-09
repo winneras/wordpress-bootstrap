@@ -38,15 +38,15 @@
 
                         <div class="col-sm-12">
                             <div class="row">
-                                <div class= "col-md-4 col-sm-12 posRlt" >
+                                <div class= "col-md-4 col-sm-12 posRlt sm-no-display" >
                                     <div class="row">
                                         <div class="col-xs-12">
                                             <?php echo do_shortcode('[metaslider id=53]') ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class= "col-md-4 posRlt sticky-news" >
-                                    <div id="news-block" class="home-4col-block">
+                                <div class= "col-md-4 posRlt sticky-news sm-top-bottom-padding" >
+                                    <div id="news-block" class="home-4col-block clearfix">
                                         <div class="row"><h2 class="block-title">今日要闻</h2></div>
 
                                         <?php
@@ -97,7 +97,7 @@
                                         <?php wp_reset_postdata(); ?>
                                     </div>
                                 </div>
-                                <div class= "col-md-4 posRlt" >
+                                <div class= "col-md-4 posRlt sm-top-bottom-padding" >
                                     <div id="gongyi-block" class="home-4col-block">                                     
                                         <?php
                                         $args = array(
@@ -154,7 +154,7 @@
                         <?php // the_content(); ?>
                         <div class="row">
                             <div id="" class="clearfix top-bottom-padding">
-                                <div class= "col-md-4 posRlt" >
+                                <div class= "col-md-4 posRlt sm-top-bottom-padding" >
 
                                     <div id="taifo-block" class="home-4col-block">  
                                         <div class="row"><h2 class="block-title">泰佛</h2></div>
@@ -177,7 +177,7 @@
                                     </div>
                                 </div>
 
-                                <div class= "col-md-4 posRlt" >
+                                <div class= "col-md-4 posRlt sm-top-bottom-padding" >
 
                                     <div id="fopai-block" class="home-4col-block">  
                                         <div class="row"><h2 class="block-title">佛牌</h2></div>
@@ -200,7 +200,7 @@
                                     </div>
                                 </div>
 
-                                <div class= "col-md-4 posRlt" >
+                                <div class= "col-md-4 posRlt sm-top-bottom-padding" >
 
                                     <div id="gumantong-block" class="home-4col-block">  
                                         <div class="row"><h2 class="block-title">古曼童</h2></div>
@@ -220,6 +220,65 @@
                                             </div>
                                         <?php endwhile; ?>
                                         <?php wp_reset_postdata(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="clearfix three-in-one">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="top-border"></div>
+                                    </div>
+                                </div>
+                                <div class="row md-lg-display">
+                                    <div class="col-md-8">
+                                        <h2 class="block-title">博客精选</h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h2 class="block-title">佛学微博</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <?php
+                                    $args = array(
+                                        'posts_per_page' => 8,
+                                        'category__in' => array(9),
+                                        'ignore_sticky_posts' => 0
+                                    );
+                                    $query = new WP_Query($args);
+                                    $post_counter = 0;
+                                    ?>                                    
+                                    <?php while ($query->have_posts() && $post_counter < 4) : $query->the_post(); ?>
+                                        <?php if (has_post_thumbnail()) : ?>
+                                            <?php if (($post_counter % 2) == 0) : ?>
+                                                <div class="col-md-4" id="blog-block">
+                                                <?php endif; ?>
+                                                <div class="row top-bottom-padding">
+                                                    <div class="col-xs-4">      
+                                                        <?php echo get_the_post_thumbnail($query->ID, 'thumbnail', array('class' => 'img-responsive')); ?>
+                                                    </div>
+                                                    <div class="col-xs-8">
+                                                        <h3 class="ellipsisTxt"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                                        <p class="ellipsisTxt"><?php echo strip_tags(get_the_content()); ?></p>
+                                                    </div>
+                                                </div>
+                                                <?php if (($post_counter % 2) != 0) : ?>
+                                                </div>
+                                            <?php endif; ?>
+                                            <?php $post_counter++; ?>
+                                        <?php endif; ?>
+                                    <?php endwhile; ?>
+                                    <?php wp_reset_postdata(); ?>
+
+                                    <div class="col-md-4">
+                                        <iframe width="100%" height="240" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=240&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1726703817&verifier=4e7dc1ed&colors=d6f3f7,efe9df,666666,0082cb,ecfbfd&dpc=1"></iframe>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="top-border"></div>
                                     </div>
                                 </div>
                             </div>

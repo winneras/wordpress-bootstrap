@@ -32,7 +32,7 @@ msgstr "找不到页面，试试搜索吧！"
 
 #: archive.php:10
 msgid "Posts Categorized:"
-msgstr ""
+msgstr "位置:"
 
 #: archive.php:14
 msgid "Posts Tagged:"

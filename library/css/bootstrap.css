@@ -6840,6 +6840,9 @@ blockquote.pull-left {
 #top-banner {
   display: none;
 }
+.page-header {
+  margin-top: 20px;
+}
 .ellipsisTxt {
   white-space: nowrap;
   overflow: hidden;
@@ -6994,4 +6997,8 @@ blockquote.pull-left {
 }
 .page-template-page-homepage-php #main article {
   margin-bottom: 0;
+}
+/*related posts*/
+ul.related_post li {
+  min-height: 80px!important;
 }

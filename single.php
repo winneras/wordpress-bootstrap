@@ -1,10 +1,14 @@
 <?php get_header(); ?>
 			
 			<div id="content" class="clearfix row">
+                            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                            <div class="col-sm-12 clearfix">
+                                <div class="meta">当前位置: <?php the_category(', '); ?></div>
+                            </div>
 			
 				<div id="main" class="col-sm-8 clearfix" role="main">
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					
 					
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						
@@ -14,8 +18,6 @@
 							
 							<div class="page-header"><h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1></div>
 							
-							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php// _e("by", "wpbootstrap"); ?> <?php// the_author_posts_link(); ?>  <?php // _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
-						
 						</header> <!-- end article header -->
 					
 						<section class="post_content clearfix" itemprop="articleBody">

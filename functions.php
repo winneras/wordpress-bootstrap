@@ -106,7 +106,14 @@ function wp_bootstrap_register_sidebars() {
       'before_title' => '<h4 class="widgettitle">',
       'after_title' => '</h4>',
     ));
-    
+    register_sidebar(array(
+      'id' => 'news',
+      'name' => 'News',
+      'before_widget' => '<div id="%1$s" class="widget col-sm-4 %2$s">',
+      'after_widget' => '</div>',
+      'before_title' => '<h4 class="widgettitle">',
+      'after_title' => '</h4>',
+    ));
     
     /* 
     to add more sidebars or widgetized areas, just copy

@@ -6964,6 +6964,11 @@ h3 a {
   font-weight: normal;
   padding-right: 2em;
 }
+#taifo-block h2.block-title a,
+#fopai-block h2.block-title a,
+#gumantong-block h2.block-title a {
+  font-size: 18px;
+}
 .top-bottom-padding {
   padding: 1em 0;
 }

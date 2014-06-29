@@ -66,11 +66,21 @@
                                 <div class= "col-md-4 posRlt sm-top-bottom-padding" >
 
                                     <div id="taifo-block" class="home-4col-block">  
-                                        <div class="row"><h2 class="block-title"><?php echo get_cat_name(28); ?></h2></div>
+                                        <div class="row">
+                                            <?php
+                                                $cat_id = 28;
+                                                $cat_name = get_cat_name($cat_id);
+                                            ?>
+                                            <h2 class="block-title">
+                                                <a href="<?php echo get_category_link($cat_id); ?>" title="<?php echo $cat_name; ?>">
+                                                    <?php echo $cat_name; ?>
+                                                </a>
+                                            </h2>
+                                        </div>
                                         <?php
                                         $args = array(
                                             'posts_per_page' => 6,
-                                            'category__in' => array(28),
+                                            'category__in' => array($cat_id),
                                             'ignore_sticky_posts' => 0
                                         );
                                         $query = new WP_Query($args);
@@ -91,11 +101,21 @@
                                 <div class= "col-md-4 posRlt sm-top-bottom-padding" >
 
                                     <div id="taifo-block" class="home-4col-block">  
-                                        <div class="row"><h2 class="block-title"><?php echo get_cat_name(29); ?></h2></div>
+                                        <div class="row">
+                                            <?php
+                                                $cat_id = 29;
+                                                $cat_name = get_cat_name($cat_id);
+                                            ?>
+                                            <h2 class="block-title">
+                                                <a href="<?php echo get_category_link($cat_id); ?>" title="<?php echo $cat_name; ?>">
+                                                    <?php echo $cat_name; ?>
+                                                </a>
+                                            </h2>
+                                        </div>
                                         <?php
                                         $args = array(
                                             'posts_per_page' => 6,
-                                            'category__in' => array(29),
+                                            'category__in' => array($cat_id),
                                             'ignore_sticky_posts' => 0
                                         );
                                         $query = new WP_Query($args);
@@ -116,11 +136,21 @@
                                 <div class= "col-md-4 posRlt sm-top-bottom-padding" >
 
                                     <div id="taifo-block" class="home-4col-block">  
-                                        <div class="row"><h2 class="block-title"><?php echo get_cat_name(30); ?></h2></div>
+                                        <div class="row">
+                                            <?php
+                                                $cat_id = 30;
+                                                $cat_name = get_cat_name($cat_id);
+                                            ?>
+                                            <h2 class="block-title">
+                                                <a href="<?php echo get_category_link($cat_id); ?>" title="<?php echo $cat_name; ?>">
+                                                    <?php echo $cat_name; ?>
+                                                </a>
+                                            </h2>
+                                        </div>
                                         <?php
                                         $args = array(
                                             'posts_per_page' => 6,
-                                            'category__in' => array(30),
+                                            'category__in' => array($cat_id),
                                             'ignore_sticky_posts' => 0
                                         );
                                         $query = new WP_Query($args);

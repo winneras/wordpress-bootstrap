@@ -684,106 +684,119 @@ blockquote.pull-left{
 
 }
 
-/*home page*/
-.page-template-page-homepage-php{
-    .home-4col-block { 
-        background: @bgGrey;
-        border: 1px solid @borderGrey;
-        padding: 5px;
-        .block-title{
-            border-bottom: 1px solid @borderGrey;
-            margin: 0px -5px;
-            padding: 0 5px 5px;
-        }
-        .row{
-            margin: 0;
-        }
-        &.multi-row{
-            margin-top: 5px;
-        }
+.home-4col-block { 
+    background: @bgGrey;
+    border: 1px solid @borderGrey;
+    padding: 5px;
+    .block-title{
+        border-bottom: 1px solid @borderGrey;
+        margin: 0px -5px;
+        padding: 0 5px 5px;
+    }
+    .row{
+        margin: 0;
+    }
+    &.multi-row{
+        margin-top: 5px;
+    }
 
-    }
-    .sticky-news{
-        .col-xs-12, .col-xs-6{
-            border-bottom: 1px dashed @gray-lighter;
-            padding: 5px 0;
-        }
-        .row:last-child .col-xs-12, .row:last-child .col-xs-6{
-            border-bottom: none;
-        }    
-    }
-    h2, h3{
-        font-size: 24px;
-        margin: 5px 0 0 0;
-        a{
-            color: @gray-dark;
-            font-size: 14px;
-            font-weight: normal;
-        }
-    }
-    .sticky{
-        padding: 2px 0;
-        margin: 0;
-        a{
-            color: @gray-dark;
-            font-size: 18px;
-            font-weight: bolder;
-        }
-    }
-    .none-sticky{ 
-        margin: 0;
-        a{
-            color: @gray-dark;
-            font-size: 16px;
-            line-height: 1.8;
-        }
-    }
-    #taifo-block, #fopai-block, #gumantong-block{
-        background-image: url("/wp-content/themes/kun/images/2nd-row.png");
-        background-size: 100% 100%;
-        height: 230px;
-        h2.block-title{
-            text-align: right;
-            font-size: 18px;
-            font-weight: normal;
-            padding-right: 2em;
-        }
-    }
-    .top-bottom-padding{
-        padding: 1em 0;
-    }
-    .top-border{
-        background-image: url("/wp-content/themes/kun/images/top-border.png");
-        background-repeat: repeat-x;
-        height: 9px;
-    }
-    .three-in-one{
-        background-color: #efe9df;
-        margin: 0 15px;
-        padding: 5px;
-        .block-title{
-            font-size: 14px;
-            margin: 5px;
-            border-bottom: 1px solid #e7e7e7;
-        }
-    }
-    #blog-block{
-        padding-left: 25px;
-        h3{
-            border-bottom: 1px dashed #fff;
-            padding-bottom: 5px;
-            margin-bottom: 5px;
-        }
-    }
-    #gongqing-block, #tupian-block{
-        text-align: center;
-        margin-top: 20px;
-    }
-    #main article{
-        margin-bottom: 0;
-    }
 }
 
+/*home page*/
+
+
+.sticky-news{
+    .col-xs-12, .col-xs-6{
+        border-bottom: 1px dashed @gray-lighter;
+        padding: 5px 0;
+    }
+    .row:last-child .col-xs-12, .row:last-child .col-xs-6{
+        border-bottom: none;
+    }    
+}
+h2, h3{
+    font-size: 24px;
+    margin: 5px 0 0 0;
+    a{
+        color: @gray-dark;
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+.sticky{
+    padding: 2px 0;
+    margin: 0;
+    a{
+        color: @gray-dark;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+}
+.none-sticky{ 
+    margin: 0;
+    a{
+        color: @gray-dark;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+#taifo-block, #fopai-block, #gumantong-block{
+    background-image: url("/wp-content/themes/kun/images/2nd-row.png");
+    background-size: 100% 100%;
+    height: 230px;
+    h2.block-title{
+        text-align: right;
+        font-size: 18px;
+        font-weight: normal;
+        padding-right: 2em;
+    }
+}
+.top-bottom-padding{
+    padding: 1em 0;
+}
+.bottom-padding{
+    padding-bottom: 1em;
+}
+.top-border{
+    background-image: url("/wp-content/themes/kun/images/top-border.png");
+    background-repeat: repeat-x;
+    height: 9px;
+}
+.three-in-one{
+    background-color: #efe9df;
+    margin: 0 15px;
+    padding: 5px;
+    .block-title{
+        font-size: 14px;
+        margin: 5px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+}
+#blog-block{
+    padding-left: 25px;
+    h3{
+        border-bottom: 1px dashed #fff;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+}
+#gongqing-block, #tupian-block{
+    text-align: center;
+    margin-top: 20px;
+}
+#main article{
+    margin-bottom: 0;
+}
+
+
+
+/*gaoseng*/
+.gaoseng-block{
+    text-align: center;
+    background-image: url("/wp-content/themes/kun/images/2nd-row.png");
+    background-size: 100% 100%;
+    padding: 10px;
+}
 /*related posts*/
 ul.related_post li{
     min-height: 80px!important;

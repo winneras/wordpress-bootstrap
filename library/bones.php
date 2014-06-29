@@ -224,11 +224,11 @@ function page_navi($before = '', $after = '') {
         echo '<li class="prev"><a href="' . get_pagenum_link() . '" title="First">' . $first_page_text . '</a></li>';
     }
 
-    $prevposts = get_previous_posts_link('&larr; Previous');
+    $prevposts = get_previous_posts_link('&larr;');
     if ($prevposts) {
         echo '<li>' . $prevposts . '</li>';
     } else {
-        echo '<li class="disabled"><a href="#">&larr; Previous</a></li>';
+        echo '<li class="disabled"><a href="#">&larr;</a></li>';
     }
 
     for ($i = $start_page; $i <= $end_page; $i++) {
@@ -239,7 +239,7 @@ function page_navi($before = '', $after = '') {
         }
     }
     echo '<li class="">';
-    next_posts_link('Next &rarr;');
+    next_posts_link('&rarr;');
     echo '</li>';
     if ($end_page < $max_page) {
         $last_page_text = "&raquo;";
@@ -254,4 +254,17 @@ function filter_ptags_on_images($content) {
 }
 
 add_filter('the_content', 'filter_ptags_on_images');
+
+class Disable_Google_Fonts {
+        public function __construct() {
+                add_filter( 'gettext_with_context', array( $this, 'disable_open_sans'             ), 888, 4 );
+        }
+        public function disable_open_sans( $translations, $text, $context, $domain ) {
+                if ( 'Open Sans font: on or off' == $context && 'on' == $text ) {
+                        $translations = 'off';
+                }
+                return $translations;
+        }
+}
+$disable_google_fonts = new Disable_Google_Fonts;
 ?>

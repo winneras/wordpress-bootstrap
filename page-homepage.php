@@ -122,7 +122,7 @@
                                         <div class="row"><h2 class="block-title">高僧法师</h2></div>
                                         <?php
                                         $args = array(
-                                            'posts_per_page' => 15,
+                                            'posts_per_page' => 12,
                                             'category__in' => array(12),
                                             'ignore_sticky_posts' => 0
                                         );
@@ -141,9 +141,10 @@
                                             <?php endif; ?>
                                             <?php $post_counter++; ?>
                                         <?php endwhile; ?>
-                                        <?php if (($post_counter % 3) != 2): ?>
+                                        <?php if (($post_counter % 3) != 0): ?>
                                         </div>
                                     <?php endif; ?>
+
                                     <?php wp_reset_postdata(); ?>
                                 </div>
                             </div>
@@ -273,7 +274,7 @@
                                     <?php wp_reset_postdata(); ?>
 
                                     <div class="col-md-4">
-                                        <iframe width="100%" height="240" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=240&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1726703817&verifier=4e7dc1ed&colors=d6f3f7,efe9df,666666,0082cb,ecfbfd&dpc=1"></iframe>
+                                        <iframe width="100%" height="240" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=240&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=5120189573&verifier=b078fb09&dpc=1"></iframe>
                                     </div>
                                 </div>
                                 <div class="row">

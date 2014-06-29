@@ -71,19 +71,19 @@ msgstr "分类"
 
 #: archive.php:70 author.php:58 index.php:59 search.php:42
 msgid "&laquo; Older Entries"
-msgstr ""
+msgstr "&laquo; 上一页"
 
 #: archive.php:71 author.php:59 index.php:60 search.php:43
 msgid "Newer Entries &raquo;"
-msgstr ""
+msgstr "下一页 &raquo;"
 
 #: archive.php:81 author.php:69
 msgid "No Posts Yet"
-msgstr ""
+msgstr "尚未发布相关文章"
 
 #: archive.php:84 author.php:72
 msgid "Sorry, What you were looking for is not here."
-msgstr ""
+msgstr "出错啦！找不到您要的文章，试试搜索一下吧！"
 
 #: attachment.php:27 image.php:53 index.php:44 page-full-width.php:30
 #: page-homepage.php:109 page-left-sidebar.php:32 page.php:24 single.php:30
@@ -94,7 +94,7 @@ msgstr ""
 #: page-homepage.php:126 page-left-sidebar.php:46 page.php:38 search.php:54
 #: single.php:51
 msgid "Not Found"
-msgstr ""
+msgstr "找不到页面"
 
 #: attachment.php:44 image.php:70 index.php:72 page-full-width.php:47
 #: page-homepage.php:129 page-left-sidebar.php:49 page.php:41 search.php:57
@@ -108,7 +108,7 @@ msgstr ""
 
 #: comments.php:21
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #: comments.php:21
 msgid "Responses"
